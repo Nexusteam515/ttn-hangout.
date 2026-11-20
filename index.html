@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transformational Teens Network | Picnic & Teen Hangout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <!-- Hero / Brand Banner -->
+    <header class="hero-card">
+      <span class="badge">Picnic &amp; Teen Hangout</span>
+      <h1>The Transformational Teens Network</h1>
+      <p class="mission">
+        Transformational Teens Network is a platform dedicated to helping teenagers build a deeper relationship with God, discover their purpose, develop their character and grow into responsible, confident and value-driven young people.
+      </p>
+      <div class="divider"></div>
+      <p class="event-desc">
+        This hangout is thoughtfully organised to provide you with an opportunity to connect with new people, build meaningful friendships, have fun, explore new interests and learn valuable things in a relaxed and welcoming environment.
+      </p>
+    </header>
+
+    <!-- Registration Form Section -->
+    <section id="form-section" class="form-card">
+      <h2>Event Registration</h2>
+      <p class="form-subtitle">Fill in your details below to reserve your spot.</p>
+
+      <form id="registration-form">
+        <div class="input-group">
+          <label for="fullName">Full Name (Surname, First Name and Middle Name) *</label>
+          <input type="text" id="fullName" placeholder="e.g. Adeyemi Isaac Ayobami" required />
+        </div>
+
+        <div class="row">
+          <div class="input-group">
+            <label for="age">Age *</label>
+            <input type="number" id="age" min="10" max="25" placeholder="e.g. 16" required />
+          </div>
+
+          <div class="input-group">
+            <label for="gender">Gender *</label>
+            <select id="gender" required>
+              <option value="" disabled selected>Select gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="phone">Phone Number (WhatsApp preferred) *</label>
+          <input type="tel" id="phone" placeholder="e.g. 08012345678" required />
+        </div>
+
+        <div class="input-group">
+          <label for="address">Residential Address / Location *</label>
+          <input type="text" id="address" placeholder="e.g. Ikorodu, Lagos" required />
+        </div>
+
+        <div class="input-group">
+          <label for="organization">Church / Organisation (if applicable)</label>
+          <input type="text" id="organization" placeholder="Optional" />
+        </div>
+
+        <div class="input-group">
+          <label for="referralSource">How did you hear about this event? *</label>
+          <select id="referralSource" required>
+            <option value="" disabled selected>Choose an option</option>
+            <option value="WhatsApp">WhatsApp</option>
+            <option value="Instagram / Social Media">Instagram / Social Media</option>
+            <option value="Friend / Family">Friend / Family</option>
+            <option value="Church / School">Church / School</option>
+            <option value="Flyer / Poster">Flyer / Poster</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="expectations">What are you looking forward to most about this hangout? *</label>
+          <textarea id="expectations" rows="3" placeholder="Share what excites you most..." required></textarea>
+        </div>
+
+        <button type="submit" id="submit-btn" class="btn-primary">
+          Complete Registration
+        </button>
+      </form>
+    </section>
+
+    <!-- Post-Registration Confirmation & WhatsApp Redirect -->
+    <section id="success-section" class="success-card hidden">
+      <div class="check-circle">&#10003;</div>
+      <h2>You're Registered!</h2>
+      <p class="confirmation-text">
+        Thank you for registering for the Transformational Teens Network Picnic &amp; Teen Hangout! We look forward to sharing a beautiful time of fun, friendship, connection and unforgettable memories with you.
+      </p>
+      <p class="redirect-note">
+        Redirecting you to the official WhatsApp group in <span id="countdown">4</span>s...
+      </p>
+            <a id="whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+        Join the WhatsApp Group Now
+      </a>
+    </section>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

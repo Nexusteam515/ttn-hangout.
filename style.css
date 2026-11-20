@@ -1,0 +1,222 @@
+:root {
+  --primary: #0f766e;
+  --primary-dark: #115e59;
+  --accent: #f59e0b;
+  --bg: #f1f5f9;
+  --card: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --border: #cbd5e1;
+  --whatsapp: #25d366;
+  --whatsapp-dark: #1ebe5d;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg);
+  color: var(--text-main);
+  line-height: 1.6;
+  padding: 16px;
+}
+
+.container {
+  max-width: 540px;
+  margin: 0 auto 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Hero Section */
+.hero-card {
+  background: linear-gradient(135deg, var(--primary) 0%, #064e3b 100%);
+  color: #ffffff;
+  padding: 28px 22px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(15, 118, 110, 0.2);
+}
+
+.badge {
+  display: inline-block;
+  background-color: var(--accent);
+  color: #0f172a;
+  font-weight: 700;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 5px 12px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+.hero-card h1 {
+  font-size: 1.65rem;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+.mission,
+.event-desc {
+  font-size: 0.94rem;
+  color: #ecfdf5;
+}
+
+.divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 14px 0;
+}
+
+/* Form Card */
+.form-card,
+.success-card {
+  background: var(--card);
+  padding: 24px 20px;
+  border-radius: 18px;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+}
+
+.form-card h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.form-subtitle {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+label {
+  font-size: 0.86rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--text-main);
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--text-main);
+  background-color: #f8fafc;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.15);
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 14px;
+  margin-top: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.btn-primary:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Success & WhatsApp Redirect State */
+.hidden {
+  display: none;
+}
+
+.success-card {
+  text-align: center;
+  padding: 32px 22px;
+}
+
+.check-circle {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background-color: #dcfce7;
+  color: #15803d;
+  font-size: 1.8rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.success-card h2 {
+  font-size: 1.45rem;
+  margin-bottom: 12px;
+}
+
+.confirmation-text {
+  font-size: 0.96rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.redirect-note {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 14px;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  width: 100%;
+  padding: 14px;
+  background-color: var(--whatsapp);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.3);
+  transition: background-color 0.2s;
+}
+
+.btn-whatsapp:hover {
+  background-color: var(--whatsapp-dark);
+}
